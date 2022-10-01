@@ -1,0 +1,60 @@
+body {
+  background: darkgray;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+#verticalButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 4px 0;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+#networkCanvas {
+  background: black;
+}
+
+#carCanvas {
+  background: lightgray;
+}
+
+.leftWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips {
+  background-color: white;
+  width: 400px;
+  padding: 10px;
+  line-height: 1.5;
+  border: 2px solid black;
+  font-size: 1.1rem;
+}
+
+.rightWrapper {
+  width: 100%;
+}

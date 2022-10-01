@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Self-driving Car Simulation</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="leftWrapper">
+        <div class="tips">
+            <h2>Self Driving Car Simulation</h2>
+            <h4 class="tipsText">*Rules: press "save" everytime the car makes progress. 
+                When you press "start" after saving, the cars start with previously trained data and last saved behaviour. 
+                Delete when you want to start with freshly new untrained cars. </h4>
+            <h4>*Algorithm used: Genetic Algorithm.</h4>
+        </div>
+    </div>
+    <canvas id="carCanvas"></canvas>
+    
+    <div id="verticalButtons">
+        <button onclick="save()">save</button>
+        <button onclick="discard()">delete</button>
+        <button onclick="start()">start</button>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+    <div class="rightWrapper"></div>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="Controls.js"></script>
+    <script src="road.js"></script>
+    <script src="car.js"></script>
+    <script src="visualizer.js" ></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
